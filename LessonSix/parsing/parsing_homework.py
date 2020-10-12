@@ -9,7 +9,7 @@ news = mSoup.find_all('div', class_='one')
 results = []
 for item in news:
     date = item.find('div', class_='time').get_text(strip=True)
-    title = item.find('div',class_='title').get_text(strip=True)
+    title = item.find('div',class_='title').get_text(strip=True).replace("&nbsp;", "")
     href = item.a.get('href')
     results.append({
         'date': date,
