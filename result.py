@@ -59,6 +59,7 @@ print("Результат сеттера")
 incapsulate5.set_result(500)
 incapsulate5.print_info_two()
 
+
 print("")
 
 incapsulate6 = IncapsulateAnymalsThree("AnymalsThree")
